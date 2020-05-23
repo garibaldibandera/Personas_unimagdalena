@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class CrearPersonas extends AppCompatActivity {
     private EditText cedula, nombre, apellido;
@@ -18,7 +19,8 @@ public class CrearPersonas extends AppCompatActivity {
         apellido = findViewById(R.id.txtApellido);
     }
         public void guardar(View v){
-            String ced, nom, apell;
+            String ced, nom, apell, mensaje_guardado;
+            mensaje_guardado=getResources().getString(R.string.mensaje_guardado);
             Persona persona;
             if (validar()){
                 ced=cedula.getText().toString();
@@ -26,9 +28,10 @@ public class CrearPersonas extends AppCompatActivity {
                 apell=apellido.getText().toString();
                 persona=new Persona(ced, nom, apell);
                 persona.guardar();
-
+                Toast.makeText(this,mensaje_guardado, Toast.LENGTH_LONG).show();
             }
         }
+
         public boolean validar(){
             String error_cedula, error_nombre, error_apellido;
             error_cedula=getResources().getString(R.string.error_cedula);
@@ -48,10 +51,14 @@ public class CrearPersonas extends AppCompatActivity {
         }
 
         public void limpiar(View v){
+            limpiar();
+        }
+        public void limpiar(){
             cedula.setText("");
             nombre.setText("");
             apellido.setText("");
             cedula.requestFocus();
+
         }
     }
 

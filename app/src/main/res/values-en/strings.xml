@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Personas</string>
+    <string name="app_name">People</string>
     <string name="opcion_crear">Create</string>
     <string name="opcion_listar">List</string>
+    <string name="numero">No.</string>
+    <string name="error_apellido">Type Lastname</string>
+    <string name="error_nombre">Type Name</string>
+    <string name="error_cedula">Type Identification</string>
+    <string name="limpiar">Clear</string>
+    <string name="guardar">Save</string>
+    <string name="apellido">Lastname</string>
+    <string name="nombre">Name</string>
+    <string name="cedula">Identification</string>
+    <string name="titulo">Create Person</string>
+    <string name="mensaje_guardado">Saved Person</string>
 </resources>
