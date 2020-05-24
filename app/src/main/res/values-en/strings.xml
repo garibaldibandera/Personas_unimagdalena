@@ -13,5 +13,5 @@
     <string name="nombre">Name</string>
     <string name="cedula">Identification</string>
     <string name="titulo">Create Person</string>
-    <string name="mensaje_guardado">Saved Person</string>
+    <string name="mensaje_guardado">Person saved</string>
 </resources>
