@@ -1,5 +1,7 @@
 package com.example.personas;
 
+
+
 public class Persona {
     private String cedula;
     private String nombre;
@@ -10,9 +12,8 @@ public class Persona {
         this.nombre=nombre;
         this.apellido=apellido;
     }
-    public String getCedula() {
-        return cedula;
-    }
+
+    public String getCedula() { return cedula; }
 
     public void setCedula(String cedula) {
         this.cedula = cedula;

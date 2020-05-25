@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ListarPersona extends AppCompatActivity {
+
     private TableLayout tabla;
     private ArrayList<Persona> personas;
 
@@ -19,7 +20,7 @@ public class ListarPersona extends AppCompatActivity {
         setContentView(R.layout.activity_listar_persona);
         tabla=findViewById(R.id.tblPersonas);
         personas=Datos.obtener();
-        for (int i =0; i<personas.size(); i++){
+        for (int i = 0; i <personas.size(); i++) {
             TableRow fila=new TableRow(this);
 
             TextView columna_uno =new TextView(this);
@@ -38,9 +39,6 @@ public class ListarPersona extends AppCompatActivity {
             fila.addView(columna_cuatro);
 
             tabla.addView(fila);
-
-
-
         }
     }
 }

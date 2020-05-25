@@ -22,6 +22,7 @@
                 android:id="@+id/lblNumero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="No."
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -29,6 +30,7 @@
                 android:id="@+id/lblCedula"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Cédula"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -36,6 +38,7 @@
                 android:id="@+id/lblNombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Nombre"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -43,9 +46,9 @@
                 android:id="@+id/lblApellido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Apellido"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
         </TableRow>
 
     </TableLayout>
